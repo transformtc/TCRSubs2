@@ -16,13 +16,13 @@ class ClientsController extends Controller
     public function index()
     {
         $clients = Client::all();
-        return view('welcome', compact('clients'));
+        return view('clients.index', compact('clients'));
     }
 
     public function show($id)
     {
-        $clients = Client::find($id);
-        return view('welcome', compact('clients'));
+        $client = Client::find($id);
+        return view('clients.show', compact('client'));
     }
 
 }
