@@ -12,6 +12,6 @@
 */
 
 Route::get('/clients/', 'ClientsController@index');
-Route::get('/clients/{id}','ClientsController@show');
+Route::get('/clients/{client}','ClientsController@show');
 
 ?>
