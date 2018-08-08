@@ -13,6 +13,6 @@
 
 Route::get('/', function () {
 
-    $clients = DB::table('tasks')->get();
+    $clients = DB::table('Clients')->get();
     return view('welcome', compact($clients));
 });
