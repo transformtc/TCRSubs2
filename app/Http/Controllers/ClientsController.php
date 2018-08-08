@@ -12,7 +12,6 @@ use App\Client;
 
 class ClientsController extends Controller
 {
-    protected $primaryKey = 'client_id';
 
     public function index()
     {
