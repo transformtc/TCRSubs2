@@ -13,6 +13,6 @@
 
 Route::get('/', function () {
 
-    $clients = DB::table('Clients')->get();
+    $clients = App\Client::all();
     return view('welcome', compact('clients'));
 });
