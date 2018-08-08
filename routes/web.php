@@ -11,8 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/clients/', 'ClientsController@index');
+Route::get('/clients/{id}','ClientsController@show');
 
-    $clients = App\Client::all();
-    return view('welcome', compact('clients'));
-});
+?>
