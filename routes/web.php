@@ -14,5 +14,5 @@
 Route::get('/', function () {
 
     $clients = DB::table('Clients')->get();
-    return view('welcome', compact($clients));
+    return view('welcome', compact('clients'));
 });
