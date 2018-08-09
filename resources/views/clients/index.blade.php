@@ -7,7 +7,15 @@
 <body>
 
 @foreach($clients as $client)
-    <li>{{$client->client_name}}</li>
+    <label>
+        Client Name
+        <input type="text" name="client_name" value="{{ $client->client_name }}">
+    </label>
+
+    <label>
+        Client Email
+        <input type="text" name="client_email" value="{{ $client->client_email }}">
+    </label>
 @endforeach
 </body>
 

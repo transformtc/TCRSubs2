@@ -5,7 +5,6 @@
 </head>
 
 <body>
-
     <li>{{$client->client_name}}</li>
 </body>
 
